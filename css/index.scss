@@ -177,3 +177,24 @@ header{
 form{
   z-index: 3000;
 }
+@media screen and (max-width: 800px) {
+
+  .chara{
+    display: none;
+
+  }
+ .logo{
+   display: flex;
+   justify-content: center;
+   margin-top: 15vh;
+ }
+  .gambar{
+    width: 80vw;
+  }
+  .sysreq{
+    h1{
+      display: none;
+    }
+  }
+
+}

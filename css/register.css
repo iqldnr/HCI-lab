@@ -19,7 +19,6 @@ header {
 
 .log-char {
   max-width: 13%;
-  background-color: black;
 }
 
 .nav-1-char {
@@ -61,6 +60,12 @@ body {
 
 .registerform {
   display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .check {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=register.css.map */
