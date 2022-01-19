@@ -15,19 +15,62 @@ body {
 
   justify-content: space-between;
   padding: 0.5%;
+  padding-bottom: 0;
 }
 
 .log-char {
   max-width: 13%;
 }
+/* DROPDOWN */
 .drop-char {
   max-width: auto;
-  max-height: 1000%;
+  max-height: auto;
+  text-decoration: none;
 }
+
 .nav-1-char {
   padding-right: 1%;
   padding-left: 1%;
+  text-decoration: none;
 }
+.nav-d-char {
+  background-color: black;
+  text-decoration: none;
+  padding: 0;
+  content: 0;
+  visibility: hidden;
+  transition-duration: 1s;
+}
+.nav-d-char p {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 0;
+  content: 0;
+  margin-top: 0;
+}
+.drop-char:hover {
+  background-color: brown;
+}
+
+.drop-char:hover ~ .nav-d-char {
+  transition-duration: 1s;
+  visibility: visible;
+  display: block;
+}
+.nav-1-char:hover ~ .nav-d-char {
+  visibility: visible;
+  display: block;
+}
+.nav-d-char:hover {
+  background-color: brown;
+  visibility: visible;
+}
+.nav-d-char:hover p {
+  background-color: red;
+}
+
+/* SELESAI DROP */
 
 .H1-char {
   color: white;
