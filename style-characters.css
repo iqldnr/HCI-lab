@@ -32,4 +32,61 @@ body {
 .H1-char {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.cont-char {
+  display: inline-block;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.453);
+  color: white;
+  text-align: center;
+  height: 20;
+  max-width: 60%;
+  padding: 0;
+  border-radius: 10%;
+}
+.cont2-char {
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10%;
+}
+.hh-char {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.img1-char {
+  max-width: 30%;
+}
+/* footer dibawah ini */
+.foot-char {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.foot-img-char {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: right;
+  margin-right: 1%;
+}
+.img-1-char {
+  max-width: 2%;
+  padding: 0;
+  margin: 0;
+}
+.img-2-char {
+  max-width: 2%;
+  padding: 0;
+  margin: 0;
 }
