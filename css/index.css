@@ -17,6 +17,53 @@ header {
   height: 100%;
   z-index: 100;
 }
+.drop-char {
+  max-width: auto;
+  max-height: auto;
+  text-decoration: none;
+}
+
+.nav-1-char {
+  padding-right: 1%;
+  padding-left: 1%;
+  text-decoration: none;
+}
+.nav-d-char {
+  background-color: black;
+  text-decoration: none;
+  padding: 0;
+  content: 0;
+  visibility: hidden;
+  transition-duration: 1s;
+}
+.nav-d-char p {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 0;
+  content: 0;
+  margin-top: 0;
+}
+.drop-char:hover {
+  background-color: brown;
+}
+
+.drop-char:hover ~ .nav-d-char {
+  transition-duration: 1s;
+  visibility: visible;
+  display: block;
+}
+.nav-1-char:hover ~ .nav-d-char {
+  visibility: visible;
+  display: block;
+}
+.nav-d-char:hover {
+  background-color: brown;
+  visibility: visible;
+}
+.nav-d-char:hover p {
+  background-color: red;
+}
 
 .logo {
   display: flex;
@@ -113,7 +160,8 @@ header {
   padding: 0.2em;
 }
 
-.prev, .next {
+.prev,
+.next {
   float: left;
   margin-right: 1vw;
   margin-left: 1vw;
@@ -186,23 +234,34 @@ form {
   z-index: 3000;
 }
 
-@media screen and (max-width: 800px) {
-  .chara {
-    display: none;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 15vh;
-  }
-
-  .gambar {
-    width: 80vw;
-  }
-
-  .sysreq h1 {
-    display: none;
-  }
+.foot-char {
+  background-color: black;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-left: 1%;
+}
+.foot-img-char {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: right;
+  padding-right: 1%;
+}
+.img-1-char {
+  max-width: 3%;
+  padding: 0;
+  margin: 0;
+}
+.img-2-char {
+  max-width: 3%;
+  padding: 0;
+  margin: 0;
 }
 
+/*# sourceMappingURL=index.css.map */
