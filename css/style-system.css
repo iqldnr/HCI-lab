@@ -1,8 +1,9 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url(./resource/scene.jpg);
+  background-image: url("../bggif.gif");
   background-size: 100vw 100vh;
+  color: white;
 }
 
 .back-char {
@@ -70,47 +71,16 @@ body {
 .nav-d-char:hover p {
   background-color: red;
 }
-
-/* SELESAI DROP */
-
-.H1-char {
+.div1-about p {
   color: white;
+  font-size: large;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
-  align-content: center;
-  text-align: center;
 }
-.cont-char {
-  display: inline-block;
-  align-self: center;
-  background-color: rgba(0, 0, 0, 0.453);
-  color: white;
-  text-align: center;
-  height: 20;
-  max-width: 60%;
-  padding: 0;
-  border-radius: 10%;
+.gif-about {
+  border-radius: 4%;
+  margin-left: 5%;
 }
-.cont2-char {
-  align-self: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 10%;
-}
-.hh-char {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.img1-char {
-  max-width: 30%;
-}
-/* footer dibawah ini */
+/* footer */
 .foot-char {
   background-color: black;
   color: white;
@@ -139,4 +109,27 @@ body {
   max-width: 3%;
   padding: 0;
   margin: 0;
+}
+.sysreq div {
+  padding: 0;
+}
+.sysreq li {
+  text-align: left;
+}
+
+.bott {
+  display: flex;
+  justify-content: left;
+}
+
+.judulreg {
+  margin-top: 10vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  z-index: 3000;
 }
