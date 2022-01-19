@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(./resource/scene.jpg);
+}
+
+.back-char {
+  height: fit-content;
+}
+.nav-char {
+  background-color: rgba(0, 0, 0, 0.453);
+  /* background: transparent; */
+  display: flex;
+  max-height: 50px;
+
+  justify-content: space-between;
+  padding: 0.5%;
+}
+
+.log-char {
+  max-width: 13%;
+}
+.drop-char {
+  max-width: auto;
+  max-height: 1000%;
+}
+.nav-1-char {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.H1-char {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
