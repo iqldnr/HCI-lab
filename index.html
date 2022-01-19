@@ -5,14 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./resource/DMC5.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>DMC5</title>
 </head>
 <header>
     <div class="nav-char">
         <div class="nav-1-char">
-            <img src="./resource/logoutama.png" alt="" class="log-char" />
+            <img src="./resource/logoutama.png" alt="" class="log-char" id="h1"/>
         </div>
         <div class="nav-1-char">
             <img src="./resource/drop.png" alt="" class="drop-char" />
@@ -21,11 +25,8 @@
 </header>
 <div class="chara">
     <img src="resource/Character1.png" alt="char1" class="char1">
+</div>
 
-</div>
-<div class="charb">
-    <img src="resource/Character2.png" alt="char2" class="char2">
-</div>
 
 <body>
 <section class="home">
@@ -55,16 +56,62 @@
     </div>
 </section>
 <section>
+    <div class="mother">
     <script src="./JS/index.js"></script>
     <div class="container slider">
-        <div class="container">
-        <img src="./resource/arrow.svg" alt="prev" class="prev">
-            <div class="container slider-inner">
-                
-            </div>
-        </div>
+        <div class="container slidecont">
+            <h1>Characters</h1>
+            <img src="./resource/arrow.svg" alt="prev" class="prev">
+                <div class="container slider-inner">
+                    <div class="active charsli first">
+                        <img src="./resource/Character1.png" class="chatem" >
+                        <h2>Irfan</h2>
+                    </div>
+                    <div class="charsli">
+                        <img src="./resource/Character2.png" class="chatem"  >
+                        <h2>Izra</h2>
+                    </div>
+                    <div class="charsli last">
+                        <img src="./resource/character3.jpg" class="chatem" >
+                        <h2>Danta</h2>
+                    </div>
 
+                </div>
+            <img src="./resource/arrow.svg" alt="next" class="next">
+        </div>
     </div>
+    </div>
+</section>
+
+<section class="bott">
+    <div class="mother sysreq">
+        <div class="container ">
+            <h1>System Requirements</h1>
+        </div>
+        <div class="container sysreqq">
+            <ul>
+                <li>
+                        Operating System : Symbian Only
+                </li>
+                <li>
+                        Processor        : Intel Atom Bomb The Fatman
+                </li>
+                <li>
+                        GPU              : AMD U Ryzen Me Up
+                </li>
+                <li >
+                        Hard Disk        : 42 MB
+                </li>
+                <li>
+                        Display          : Occulusto Rifto
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+<section>
+
 </section>
 
 

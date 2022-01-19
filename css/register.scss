@@ -1,0 +1,59 @@
+.back-char {
+  height: fit-content;
+}
+.nav-char {
+  background-color: rgba(0, 0, 0, 0.453);
+
+  display: flex;
+  max-height: 50px;
+
+  justify-content: space-between;
+  padding: 0.5%;
+}
+
+header{
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+.log-char {
+  max-width: 13%;
+  background-color: black;
+}
+.nav-1-char {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.H1-char {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../bggif.gif);
+  background-size: 100% 100vh;
+  font-family: Arial, serif;
+  color: white;
+  background-repeat:repeat-x;
+  background-attachment: fixed;
+  background-position: left top;
+  position: absolute;
+}
+.register{
+  width: 100vw;
+  margin-top: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  text-align: center;
+  columns: 1;
+  background-color: rgba(0, 0, 0, 0.64);
+  a{
+    cursor: pointer;
+    color: gray;
+  }
+}
+.registerform{
+  display: block;
+}

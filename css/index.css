@@ -2,10 +2,20 @@ body {
   padding: 0;
   margin: 0;
   background-image: url(../bggif.gif);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
+  background-size: 100% 100vh;
   font-family: Arial, serif;
   color: white;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: left top;
+  position: absolute;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: 100;
 }
 
 .logo {
@@ -19,24 +29,16 @@ body {
   position: absolute;
 }
 
-.charb {
-  position: absolute;
-}
-
 .char1 {
   animation: travelx 10s infinite;
 }
 
-.char2 {
-  animation: travelx 12s infinite;
-}
-
 @keyframes travelx {
   0% {
-    transform: translate(0vw, 0vh);
+    transform: translate(5vw, 0vh);
   }
   20% {
-    transform: translate(0vw, 70vh);
+    transform: translate(5vw, 70vh);
   }
   40% {
     transform: translate(90vw, 70vh);
@@ -45,18 +47,7 @@ body {
     transform: translate(90vw, 0vh);
   }
   100% {
-    transform: translate(0vw, 0vh);
-  }
-}
-@keyframes travely {
-  0% {
-    transform: translateY(0vh);
-  }
-  50% {
-    transform: translateY(70vh);
-  }
-  100% {
-    transform: translateY(0vh);
+    transform: translate(5vw, 0vh);
   }
 }
 .mother {
@@ -71,7 +62,6 @@ body {
   justify-content: center;
 }
 .mother .lnn {
-  display: inline-block;
   background-color: rgba(0, 0, 0, 0.29);
   border-width: 1em;
   backdrop-filter: blur(80);
@@ -85,6 +75,55 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.slidecont {
+  width: 50vw;
+  margin: 10vw;
+  overflow: auto;
+  background-color: rgba(0, 61, 61, 0.79);
+  border-radius: 2em;
+}
+.slidecont h1 {
+  position: absolute;
+  z-index: 10;
+}
+.slidecont .slider-inner {
+  width: 40vw;
+  height: 30vh;
+  padding: 7.5vh;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5em;
+  border: #000000 solid 0.2em;
+}
+.slidecont .slider-inner .charsli {
+  display: none;
+  height: 30vh;
+}
+.slidecont .slider-inner .active {
+  display: inline-block;
+}
+.slidecont .slider-inner .chatem {
+  height: 30vh;
+  border: gold solid 0.3em;
+  box-shadow: aqua;
+  padding: 0.2em;
+}
+
+.prev, .next {
+  float: left;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  width: 2em;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.next {
+  transform: rotate(180deg);
 }
 
 .back-char {
@@ -104,11 +143,6 @@ body {
   max-width: 13%;
 }
 
-.drop-char {
-  max-width: auto;
-  max-height: 1000%;
-}
-
 .nav-1-char {
   padding-right: 1%;
   padding-left: 1%;
@@ -117,6 +151,39 @@ body {
 .H1-char {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sysreq {
+  border: rgba(68, 19, 19, 0.73) solid 0.2em;
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+}
+.sysreq .sysreqq {
+  flex-direction: column;
+}
+.sysreq div {
+  padding: 0;
+}
+.sysreq li {
+  text-align: left;
+}
+
+.bott {
+  display: flex;
+  justify-content: center;
+}
+
+.judulreg {
+  margin-top: 10vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  z-index: 3000;
 }
 
 /*# sourceMappingURL=index.css.map */
