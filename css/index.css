@@ -14,9 +14,13 @@ body {
   margin-top: 15vh;
 }
 
-.char {
+.chara {
+  z-index: 1;
   position: absolute;
-  animation: travely 12s infinite;
+}
+
+.charb {
+  position: absolute;
 }
 
 .char1 {
@@ -29,13 +33,19 @@ body {
 
 @keyframes travelx {
   0% {
-    transform: translateX(0vw);
+    transform: translate(0vw, 0vh);
   }
-  50% {
-    transform: translateX(80vw);
+  20% {
+    transform: translate(0vw, 70vh);
+  }
+  40% {
+    transform: translate(90vw, 70vh);
+  }
+  80% {
+    transform: translate(90vw, 0vh);
   }
   100% {
-    transform: translateX(0vw);
+    transform: translate(0vw, 0vh);
   }
 }
 @keyframes travely {
@@ -50,6 +60,7 @@ body {
   }
 }
 .mother {
+  z-index: 5;
   margin-right: 10vw;
   margin-left: 10vw;
   border-radius: 1em;
